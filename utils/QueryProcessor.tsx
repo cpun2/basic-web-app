@@ -1,10 +1,10 @@
 export default function QueryProcessor(query: string): string {
   var str = query.split(" ");
-  if (str[3].includes("multiplied")) {
+  if (str[3] === "multiply" ) {
     var ret = Number(str[2])*Number(str[5]);
     return (ret.toString());
   }
-  if (str[3].includes("plus")) {
+  if (str[3] === "plus") {
     var ret = Number(str[2])+Number(str[4]);
     return (ret.toString());
   }
