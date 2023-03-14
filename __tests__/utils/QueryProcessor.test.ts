@@ -18,7 +18,7 @@ describe("QueryProcessor", () => {
           ));
     });
     test("should return a string", () => {
-        const query = "What is 36 multiplied by 58?	";
+        const query = "What is 26 minus 96?";
         const response: string = QueryProcessor(query);
         expect(response).toBe("is this working");
     });
