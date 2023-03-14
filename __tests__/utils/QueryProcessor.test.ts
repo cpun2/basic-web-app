@@ -17,4 +17,9 @@ describe("QueryProcessor", () => {
             "writer in the English language and the world's pre-eminent dramatist."
           ));
     });
+    test("should return a string", () => {
+        const query = "What is 36 multiplied by 58?	";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe("is this working");
+    });
 });
